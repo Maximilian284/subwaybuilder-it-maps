@@ -1,53 +1,88 @@
 {
-  "version": "1.0.0",
-  "title": "Release 1.0.0",
-  "intro": "First public release of the Italian map pack on Railyard",
+  "version": "1.1.0",
+  "title": "Release 1.1.0",
+  "intro": "More cities added!",
   "gameVersion": ">=1.0.0",
-  "releaseCities": ["ROM", "TOR", "PAL", "FIR", "BOL"],
-  "updatedCities": ["ROM", "TOR", "PAL", "FIR", "BOL"],
+  "releaseCities": ["ROM", "TOR", "PAL", "FIR", "BOL", "GEN", "NAP", "BAR", "MIL", "CAT"],
+  "updatedCities": ["GEN", "NAP", "BAR", "MIL", "CAT"],
   "cities": [
     {
       "name": "Rome",
       "code": "ROM",
       "version": "1.0.0",
       "population": 3853000,
-      "notes": "Initial Railyard release"
+      "notes": "Aleady aviable"
     },
     {
       "name": "Turin",
       "code": "TOR",
       "version": "1.0.0",
       "population": 1820406,
-      "notes": "Initial Railyard release"
+      "notes": "Already available"
     },
     {
       "name": "Palermo",
       "code": "PAL",
       "version": "1.0.0",
       "population": 1133830,
-      "notes": "Initial Railyard release"
+      "notes": "Already available"
     },
     {
       "name": "Florence",
       "code": "FIR",
       "version": "1.0.0",
       "population": 1253616,
-      "notes": "Initial Railyard release"
+      "notes": "Already available"
     },
     {
       "name": "Bologna",
       "code": "BOL",
       "version": "1.0.0",
       "population": 908358,
-      "notes": "Initial Railyard release"
+      "notes": "Already available"
+    },
+    {
+      "name": "Genoa",
+      "code": "GEN",
+      "version": "1.0.0",
+      "population": 912114,
+      "notes": "New map added"
+    },
+    {
+      "name": "Naples",
+      "code": "NAP",
+      "version": "1.0.0",
+      "population": 3391962,
+      "notes": "New map added"
+    },
+    {
+      "name": "Bari",
+      "code": "BAR",
+      "version": "1.0.0",
+      "population": 1320910,
+      "notes": "New map added"
+    },
+    {
+      "name": "Milan",
+      "code": "MIL",
+      "version": "1.0.0",
+      "population": 5354395,
+      "notes": "New map added"
+    },
+    {
+      "name": "Catania",
+      "code": "CAT",
+      "version": "1.0.0",
+      "population": 1060361,
+      "notes": "New map added"
     }
   ],
   "changelog": [
-    "Added Rome",
-    "Added Turin",
-    "Added Palermo",
-    "Added Florence",
-    "Added Bologna"
+    "Added Genoa",
+    "Added Naples",
+    "Added Bari",
+    "Added Milan",
+    "Added Catania"
   ],
-  "mapChangelog": "Initial Railyard release with updated demand data and new buildings foundations data."
+  "mapChangelog": "Added new cities: Napoles, Genoa, Bari, Milan and Catania. Updated demand data for all cities and added building foundation data."
 }
