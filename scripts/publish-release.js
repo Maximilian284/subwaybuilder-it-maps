@@ -54,7 +54,15 @@ function generateReleaseNotes(scriptsDir) {
   return path.join(scriptsDir, "release-notes.md");
 }
 
-function updateMapJson(releasesDir, cityCode, mapVersion, gameVersion, changelog, downloadUrl, sha256) {
+function updateMapJson(
+  releasesDir,
+  cityCode,
+  mapVersion,
+  gameVersion,
+  changelog,
+  downloadUrl,
+  sha256
+) {
   const jsonPath = path.join(releasesDir, `${cityCode}.json`);
 
   const data = loadJson(jsonPath, {
@@ -73,7 +81,10 @@ function updateMapJson(releasesDir, cityCode, mapVersion, gameVersion, changelog
     sha256
   };
 
-  data.versions = [newEntry, ...data.versions.filter(v => v.version !== mapVersion)];
+  data.versions = [
+    newEntry,
+    ...data.versions.filter(v => v.version !== mapVersion)
+  ];
 
   saveJson(jsonPath, data);
 }
@@ -90,6 +101,7 @@ function releaseExists(version) {
 function createOrUpdateGitHubRelease(version, notesPath, zipPaths) {
   if (!releaseExists(version)) {
     const assetArgs = zipPaths.map(p => `"${p}"`).join(" ");
+
     execSync(
       `gh release create ${version} ${assetArgs} --title "${version}" --notes-file "${notesPath}"`,
       { stdio: "inherit" }
@@ -104,6 +116,7 @@ function createOrUpdateGitHubRelease(version, notesPath, zipPaths) {
 }
 
 function main() {
+
   const repoRoot = path.resolve(__dirname, "..");
   const scriptsDir = path.join(repoRoot, "scripts");
   const sourceDir = path.join(repoRoot, "source");
@@ -121,7 +134,7 @@ function main() {
   const gameVersion = releaseData.gameVersion;
   const releaseCities = releaseData.releaseCities || [];
   const updatedCities = releaseData.updatedCities || [];
-  const mapChangelog = releaseData.mapChangelog || "";
+  const globalMapChangelog = releaseData.mapChangelog || "";
 
   if (!version) {
     throw new Error("release-data.json: missing 'version'");
@@ -134,23 +147,75 @@ function main() {
   ensureDir(distDir);
   ensureDir(releasesDir);
 
+  /*
+  ----------------------------------------------------
+  Creazione indice città per accesso veloce
+  ----------------------------------------------------
+  */
+
+  const citiesIndex = {};
+
+  for (const city of releaseData.cities || []) {
+    citiesIndex[city.code] = city;
+  }
+
+  /*
+  ----------------------------------------------------
+  Creazione ZIP delle mappe
+  ----------------------------------------------------
+  */
+
   const zipPaths = [];
 
   for (const cityCode of releaseCities) {
+
     const citySourceDir = path.join(sourceDir, cityCode);
     const zipPath = path.join(distDir, `${cityCode}.zip`);
 
     zipDirectory(citySourceDir, zipPath);
+
     zipPaths.push(zipPath);
 
     console.log(`Created ${zipPath}`);
   }
 
+  /*
+  ----------------------------------------------------
+  Generazione release notes
+  ----------------------------------------------------
+  */
+
   const notesPath = generateReleaseNotes(scriptsDir);
+
+  /*
+  ----------------------------------------------------
+  Creazione o aggiornamento release GitHub
+  ----------------------------------------------------
+  */
 
   createOrUpdateGitHubRelease(version, notesPath, zipPaths);
 
+  /*
+  ----------------------------------------------------
+  Aggiornamento JSON delle mappe
+  ----------------------------------------------------
+  */
+
   for (const cityCode of updatedCities) {
+
+    const cityData = citiesIndex[cityCode];
+
+    if (!cityData) {
+      throw new Error(`City ${cityCode} not defined in release-data.json`);
+    }
+
+    const mapVersion = cityData.version;
+
+    const cityChangelog =
+      cityData.mapChangelog && cityData.mapChangelog.trim() !== ""
+        ? cityData.mapChangelog
+        : globalMapChangelog;
+
     const zipPath = path.join(distDir, `${cityCode}.zip`);
 
     if (!fs.existsSync(zipPath)) {
@@ -158,14 +223,16 @@ function main() {
     }
 
     const sha256 = sha256File(zipPath);
-    const downloadUrl = `https://github.com/${REPO_SLUG}/releases/download/${version}/${cityCode}.zip`;
+
+    const downloadUrl =
+      `https://github.com/${REPO_SLUG}/releases/download/${version}/${cityCode}.zip`;
 
     updateMapJson(
       releasesDir,
       cityCode,
-      version,
+      mapVersion,
       gameVersion,
-      mapChangelog,
+      cityChangelog,
       downloadUrl,
       sha256
     );
