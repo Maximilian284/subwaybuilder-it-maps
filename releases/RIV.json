@@ -1,0 +1,13 @@
+{
+  "schema_version": 1,
+  "versions": [
+    {
+      "version": "1.0.0",
+      "game_version": ">=1.0.0",
+      "date": "2026-03-17",
+      "changelog": "Added new cities: Garda Lake and Riviera Romagnola.",
+      "download": "https://github.com/Maximilian284/subwaybuilder-it-maps/releases/download/1.2.0/RIV.zip",
+      "sha256": "1864560931cc79a68eb874d7632db02bcfca928f73463e4b47b7491ed5b519db"
+    }
+  ]
+}

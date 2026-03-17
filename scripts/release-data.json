@@ -1,17 +1,17 @@
 {
-  "version": "1.1.0",
-  "title": "Release 1.1.0",
-  "intro": "More cities added!",
+  "version": "1.2.0",
+  "title": "Release 1.2.0",
+  "intro": "Two more cities!",
   "gameVersion": ">=1.0.0",
-  "releaseCities": ["ROM", "TOR", "PAL", "FIR", "BOL", "GEN", "NAP", "BAR", "MIL", "CAT"],
-  "updatedCities": ["GEN", "NAP", "BAR", "MIL", "CAT"],
+  "releaseCities": ["ROM", "TOR", "PAL", "FIR", "BOL", "GEN", "NAP", "BAR", "MIL", "CAT", "RIV", "GRD"],
+  "updatedCities": ["RIV", "GRD"],
   "cities": [
     {
       "name": "Rome",
       "code": "ROM",
       "version": "1.0.0",
       "population": 3853000,
-      "notes": "Aleady aviable"
+      "notes": "Already available"
     },
     {
       "name": "Turin",
@@ -46,43 +46,54 @@
       "code": "GEN",
       "version": "1.0.0",
       "population": 912114,
-      "notes": "New map added"
+      "notes": "Already available"
     },
     {
       "name": "Naples",
       "code": "NAP",
       "version": "1.0.0",
       "population": 3391962,
-      "notes": "New map added"
+      "notes": "Already available"
     },
     {
       "name": "Bari",
       "code": "BAR",
       "version": "1.0.0",
       "population": 1320910,
-      "notes": "New map added"
+      "notes": "Already available"
     },
     {
       "name": "Milan",
       "code": "MIL",
       "version": "1.0.0",
       "population": 5354395,
-      "notes": "New map added"
+      "notes": "Already available"
     },
     {
       "name": "Catania",
       "code": "CAT",
       "version": "1.0.0",
       "population": 1060361,
+      "notes": "Already available"
+    },
+    {
+      "name": "Riviera Romagnola",
+      "code": "RIV",
+      "version": "1.0.0",
+      "population": 1261128,
+      "notes": "New map added"
+    },
+    {
+      "name": "Garda Lake",
+      "code": "GRD",
+      "version": "1.0.0",
+      "population": 1819725,
       "notes": "New map added"
     }
   ],
   "changelog": [
-    "Added Genoa",
-    "Added Naples",
-    "Added Bari",
-    "Added Milan",
-    "Added Catania"
+    "Added Garda Lake (Brescia, Verona, Bergamo)",
+    "Added Riviera Romagnola (Rimini, Cesena, Forli, Ravenna, Faenza, Pesaro, Fano)"
   ],
-  "mapChangelog": "Added new cities: Napoles, Genoa, Bari, Milan and Catania. Updated demand data for all cities and added building foundation data."
+  "mapChangelog": "Added new cities: Garda Lake and Riviera Romagnola."
 }
