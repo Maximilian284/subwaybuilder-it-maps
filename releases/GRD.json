@@ -5,7 +5,7 @@
       "version": "1.0.0",
       "game_version": ">=1.0.0",
       "date": "2026-03-17",
-      "changelog": "Added new cities: Garda Lake and Riviera Romagnola.",
+      "changelog": "Initial Railyard release with updated demand data and new buildings foundations data.",
       "download": "https://github.com/Maximilian284/subwaybuilder-it-maps/releases/download/1.2.0/GRD.zip",
       "sha256": "9982da87e4007ecb6b2f12efb4485b86251a9fb182cd7946de8b61db7d8cd126"
     }

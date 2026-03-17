@@ -5,7 +5,7 @@
       "version": "1.0.0",
       "game_version": ">=1.0.0",
       "date": "2026-03-10",
-      "changelog": "Added new cities: Napoles, Genoa, Bari, Milan and Catania. Updated demand data for all cities and added building foundation data.",
+      "changelog": "Initial Railyard release with updated demand data and new buildings foundations data.",
       "download": "https://github.com/Maximilian284/subwaybuilder-it-maps/releases/download/1.1.0/NAP.zip",
       "sha256": "ba32780d4a528a87132ea8b8f7d0dcb8ff495b10e12a7398cfcaad6088358518"
     }
