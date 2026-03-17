@@ -243,7 +243,7 @@ function main() {
   console.log("");
   console.log("Done.");
   console.log("Now run:");
-  console.log("  git add releases");
+  console.log("  git add .");
   console.log(`  git commit -m "Release ${version}"`);
   console.log("  git push");
 }
