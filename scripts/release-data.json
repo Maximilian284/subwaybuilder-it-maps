@@ -1,10 +1,10 @@
 {
-  "version": "1.2.0",
-  "title": "Release 1.2.0",
-  "intro": "Two more cities!",
+  "version": "1.3.0",
+  "title": "Release 1.3.0",
+  "intro": "Two more cities (again)!",
   "gameVersion": ">=1.0.0",
-  "releaseCities": ["ROM", "TOR", "PAL", "FIR", "BOL", "GEN", "NAP", "BAR", "MIL", "CAT", "RIV", "GRD"],
-  "updatedCities": ["RIV", "GRD"],
+  "releaseCities": ["ROM", "TOR", "PAL", "FIR", "BOL", "GEN", "NAP", "BAR", "MIL", "CAT", "RIV", "GRD", "PRM", "VPT"],
+  "updatedCities": ["PRM", "VPT"],
   "cities": [
     {
       "name": "Rome",
@@ -81,19 +81,36 @@
       "code": "RIV",
       "version": "1.0.0",
       "population": 1261128,
-      "notes": "New map added"
+      "notes": "Already available"
     },
     {
       "name": "Garda Lake",
       "code": "GRD",
       "version": "1.0.0",
       "population": 1819725,
-      "notes": "New map added"
+      "notes": "Already available"
+    },
+    {
+      "name": "Pianura Emiliana",
+      "code": "PRM",
+      "version": "1.0.0",
+      "population": 1682790,
+      "notes": "New map added",
+      "mapChangelog": "Initial Railyard release with updated demand data and new buildings foundations data."
+
+    },
+    {
+      "name": "Pianura Veneta",
+      "code": "VPT",
+      "version": "1.0.0",
+      "population": 2331506,
+      "notes": "New map added",
+      "mapChangelog": "Initial Railyard release with updated demand data and new buildings foundations data."
     }
   ],
   "changelog": [
-    "Added Garda Lake (Brescia, Verona, Bergamo)",
-    "Added Riviera Romagnola (Rimini, Cesena, Forli, Ravenna, Faenza, Pesaro, Fano)"
+    "Added Pianura Emiliana (Parma, Reggio Emilia, Modena)",
+    "Added Pianura Veneta (Padova, Treviso, Venezia, Chioggia, Castelfranco Veneto)"
   ],
-  "mapChangelog": "Added new cities: Garda Lake and Riviera Romagnola."
+  "mapChangelog": "Added new cities: Pianura Emiliana and Pianura Veneta."
 }

@@ -1,6 +1,6 @@
-## Release 1.2.0
+## Release 1.3.0
 
-Two more cities!
+Two more cities (again)!
 
 | City | Code | Population | Map Version | Notes |
 |------|------|------------|-------------|-------|
@@ -14,11 +14,13 @@ Two more cities!
 | Bari | BAR | 1320910 | 1.0.0 | Already available |
 | Milan | MIL | 5354395 | 1.0.0 | Already available |
 | Catania | CAT | 1060361 | 1.0.0 | Already available |
-| Riviera Romagnola | RIV | 1261128 | 1.0.0 | New map added |
-| Garda Lake | GRD | 1819725 | 1.0.0 | New map added |
+| Riviera Romagnola | RIV | 1261128 | 1.0.0 | Already available |
+| Garda Lake | GRD | 1819725 | 1.0.0 | Already available |
+| Pianura Emiliana | PRM | 1682790 | 1.0.0 | New map added |
+| Pianura Veneta | VPT | 2331506 | 1.0.0 | New map added |
 
 ## Changelog
 
-- Added Garda Lake (Brescia, Verona, Bergamo)
-- Added Riviera Romagnola (Rimini, Cesena, Forli, Ravenna, Faenza, Pesaro, Fano)
+- Added Pianura Emiliana (Parma, Reggio Emilia, Modena)
+- Added Pianura Veneta (Padova, Treviso, Venezia, Chioggia, Castelfranco Veneto)
 

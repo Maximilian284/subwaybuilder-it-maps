@@ -1,0 +1,13 @@
+{
+  "schema_version": 1,
+  "versions": [
+    {
+      "version": "1.0.0",
+      "game_version": ">=1.0.0",
+      "date": "2026-03-23",
+      "changelog": "Initial Railyard release with updated demand data and new buildings foundations data.",
+      "download": "https://github.com/Maximilian284/subwaybuilder-it-maps/releases/download/1.3.0/VPT.zip",
+      "sha256": "80059ca666760e06de53131c9afad1354d148a9ef728e842fecb3c8c122178a3"
+    }
+  ]
+}
