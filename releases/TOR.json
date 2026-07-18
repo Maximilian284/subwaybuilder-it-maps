@@ -2,6 +2,14 @@
   "schema_version": 1,
   "versions": [
     {
+      "version": "1.1.0",
+      "game_version": ">=1.0.0",
+      "date": "2026-07-18",
+      "changelog": "Added new building index file for all cities",
+      "download": "https://github.com/Maximilian284/subwaybuilder-it-maps/releases/download/1.4.0/TOR.zip",
+      "sha256": "941b782de4648d7ccd3d359533f547a025e3efc65c67c2ab8d4c81fe39d2ab8d"
+    },
+    {
       "version": "1.0.0",
       "game_version": ">=1.0.0",
       "date": "2026-03-09",

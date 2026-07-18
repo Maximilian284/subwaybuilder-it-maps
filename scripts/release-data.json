@@ -1,116 +1,112 @@
 {
-  "version": "1.3.0",
-  "title": "Release 1.3.0",
-  "intro": "Two more cities (again)!",
+  "version": "1.4.0",
+  "title": "Release 1.4.0",
+  "intro": "Added new building index file for all cities",
   "gameVersion": ">=1.0.0",
   "releaseCities": ["ROM", "TOR", "PAL", "FIR", "BOL", "GEN", "NAP", "BAR", "MIL", "CAT", "RIV", "GRD", "PRM", "VPT"],
-  "updatedCities": ["PRM", "VPT"],
+  "updatedCities": ["ROM", "TOR", "PAL", "FIR", "BOL", "GEN", "NAP", "BAR", "MIL", "CAT", "RIV", "GRD", "PRM", "VPT"],
   "cities": [
     {
       "name": "Rome",
       "code": "ROM",
-      "version": "1.0.0",
+      "version": "1.1.0",
       "population": 3853000,
-      "notes": "Already available"
+      "notes": "Added new building index file"
     },
     {
       "name": "Turin",
       "code": "TOR",
-      "version": "1.0.0",
+      "version": "1.1.0",
       "population": 1820406,
-      "notes": "Already available"
+      "notes": "Added new building index file"
     },
     {
       "name": "Palermo",
       "code": "PAL",
-      "version": "1.0.0",
+      "version": "1.1.0",
       "population": 1133830,
-      "notes": "Already available"
+      "notes": "Added new building index file"
     },
     {
       "name": "Florence",
       "code": "FIR",
-      "version": "1.0.0",
+      "version": "1.1.0",
       "population": 1253616,
-      "notes": "Already available"
+      "notes": "Added new building index file"
     },
     {
       "name": "Bologna",
       "code": "BOL",
-      "version": "1.0.0",
+      "version": "1.1.0",
       "population": 908358,
-      "notes": "Already available"
+      "notes": "Added new building index file"
     },
     {
       "name": "Genoa",
       "code": "GEN",
-      "version": "1.0.0",
+      "version": "1.1.0",
       "population": 912114,
-      "notes": "Already available"
+      "notes": "Added new building index file"
     },
     {
       "name": "Naples",
       "code": "NAP",
-      "version": "1.0.0",
+      "version": "1.1.0",
       "population": 3391962,
-      "notes": "Already available"
+      "notes": "Added new building index file"
     },
     {
       "name": "Bari",
       "code": "BAR",
-      "version": "1.0.0",
+      "version": "1.1.0",
       "population": 1320910,
-      "notes": "Already available"
+      "notes": "Added new building index file"
     },
     {
       "name": "Milan",
       "code": "MIL",
-      "version": "1.0.0",
+      "version": "1.1.0",
       "population": 5354395,
-      "notes": "Already available"
+      "notes": "Added new building index file"
     },
     {
       "name": "Catania",
       "code": "CAT",
-      "version": "1.0.0",
+      "version": "1.1.0",
       "population": 1060361,
-      "notes": "Already available"
+      "notes": "Added new building index file"
     },
     {
       "name": "Riviera Romagnola",
       "code": "RIV",
-      "version": "1.0.0",
+      "version": "1.1.0",
       "population": 1261128,
-      "notes": "Already available"
+      "notes": "Added new building index file"
     },
     {
       "name": "Garda Lake",
       "code": "GRD",
-      "version": "1.0.0",
+      "version": "1.1.0",
       "population": 1819725,
-      "notes": "Already available"
+      "notes": "Added new building index file"
     },
     {
       "name": "Pianura Emiliana",
       "code": "PRM",
-      "version": "1.0.0",
+      "version": "1.1.0",
       "population": 1682790,
-      "notes": "New map added",
-      "mapChangelog": "Initial Railyard release with updated demand data and new buildings foundations data."
-
+      "notes": "Added new building index file"
     },
     {
       "name": "Pianura Veneta",
       "code": "VPT",
-      "version": "1.0.0",
+      "version": "1.1.0",
       "population": 2331506,
-      "notes": "New map added",
-      "mapChangelog": "Initial Railyard release with updated demand data and new buildings foundations data."
+      "notes": "Added new building index file"
     }
   ],
   "changelog": [
-    "Added Pianura Emiliana (Parma, Reggio Emilia, Modena)",
-    "Added Pianura Veneta (Padova, Treviso, Venezia, Chioggia, Castelfranco Veneto)"
+    "Added new building index file for all cities"
   ],
-  "mapChangelog": "Added new cities: Pianura Emiliana and Pianura Veneta."
+  "mapChangelog": "Added new building index file for all cities"
 }
